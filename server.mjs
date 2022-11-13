@@ -1,5 +1,9 @@
 import express from 'express';
+import cors from 'cors';
+
 const app = express()
+const cors = cors()
+
 const port = process.env.PORT || 3000;
 
 app.get('/water', (req, res) => {
